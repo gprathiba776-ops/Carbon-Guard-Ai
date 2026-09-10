@@ -1,6 +1,0 @@
-{
-  "name": "CarbonGuard AI",
-  "description": "Trusted carbon accounting with agentic governance",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

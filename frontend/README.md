@@ -1,13 +1,20 @@
-# CarbonGuard Sustainability Dashboard
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-The dashboard is intentionally thin: it collects/visualizes evidence and invokes the existing CarbonGuard SuperFlow inference endpoint.
+# Run and deploy your AI Studio app
 
-## Rules
+This contains everything you need to run your app locally.
 
-- Do not calculate emissions in the frontend.
-- Do not embed webhook secrets in browser code.
-- Display the workflow's governance state.
-- Never convert `REVIEW_REQUIRED`, `FACTOR_NOT_FOUND`, `UNSUPPORTED_CLAIM` or `BLOCKED` into an approved result.
-- Surface factor value, factor ID/source, formula and audit lineage where available.
-- Label absence of Scope 3 activity as absence of reported activity, not verified zero emissions.
-- Use `ISO 14064-3 aligned` unless formal certification/compliance has independently been established.
+View your app in AI Studio: https://ai.studio/apps/21e53dfb-9ee9-4040-b809-070cc8851ca8
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
